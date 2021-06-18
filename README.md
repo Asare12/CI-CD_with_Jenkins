@@ -48,11 +48,11 @@ Max builds- select as 3.
 4. In Jenkins Configure -> Source Code Management -> Repository URL -> paste the SSH link. (HTTP link if it doesnt work).
 5. For Credentials click `Add`-> Select `Jenkins` -> 
 - Kind : select `SSH Username and private key`
-- Username : `newjaspreetjenkinsprivate` give a name for your key
-- Select Private key: from git bash -> in .ssh folder -> `nano newjaspreetjenkins` -> copy the private key
+- Username : `newdavidjenkinsprivate` give a name for your key
+- Select Private key: from git bash -> in .ssh folder -> `nano newdavidjenkins` -> copy the private key
 - Paste in the private key -> Then click `Add`
 6. In GitHub -> in your repo -> go to settings -> click `Deploy keys` in side tab -> Click `Add Deploy key`
-7. In GitBash -> in .ssh folder -> `cat newjaspreetjenkins.pub` -> copy it
+7. In GitBash -> in .ssh folder -> `cat newdavidjenkins.pub` -> copy it
 8. Paste the public key in GitHub as a deploy key and give a title for the key -> when prompted enter GitHub password
 - You should see the key in the repo now.
 9. In Jenkins -> Source Code Management -> Credentials -> Select your private key from the drop down.
