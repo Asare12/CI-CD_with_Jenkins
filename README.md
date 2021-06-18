@@ -1,4 +1,6 @@
 # CI-CD_with_Jenkins
+- Following the diagram we will create a SSH key to connect GitHub with Jenkins so code can be read by Jenkins in a secure way. This is part of the CI process. 
+- For a job created in Jenkins, it will be able to track any changes to the GitHub repo referred to in it's configuration settings.
 ![CI-CD with Jenkins Diagram](https://github.com/Asare12/CI-CD_with_Jenkins/blob/master/images/diagram_CI_CD.png)
 
 ## Continuous Integration
