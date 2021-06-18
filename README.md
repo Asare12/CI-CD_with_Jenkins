@@ -66,9 +66,9 @@ cd app
 npm install
 npm test
 ```
-15. Post-build Actions -> Projects to build: `jaspreet_computer_name` and another builds you want triggered if the build is stable (select this from the list)
+15. Post-build Actions -> Projects to build: `david_computer_name` and another builds you want triggered if the build is stable (select this from the list)
 16. Click Save -> you will be taken to the Dashboard
-17. Select your job `jaspreet_testing_jenkins` -> in dropdown select `Build now`
+17. Select your job `david_testing_jenkins` -> in dropdown select `Build now`
 18. In your `Build history` make sure it has turned `blue` and it has successfully been able to get your code and run the commands.
 
 
