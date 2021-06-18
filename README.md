@@ -1,5 +1,5 @@
 # CI-CD_with_Jenkins
-![CI-CD with Jenkins Diagram](https://github.com/Asare12/CI-CD_with_Jenkins/blob/master/images/MicrosoftTeams-image__282_29.png)
+![CI-CD with Jenkins Diagram](https://github.com/Asare12/CI-CD_with_Jenkins/blob/master/images/diagram_CI_CD.png)
 
 ## Continuous Integration
 Developers merge/commit code to master branch multiple times a day, fully automated build and test process which gives feedback within few minutes, by doing so, you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.
