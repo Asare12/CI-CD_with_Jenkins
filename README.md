@@ -56,7 +56,7 @@ Max builds- select as 3.
 8. Paste the public key in GitHub as a deploy key and give a title for the key -> when prompted enter GitHub password
 - You should see the key in the repo now.
 9. In Jenkins -> Source Code Management -> Credentials -> Select your private key from the drop down.
-- For Branches to build enter `*/main`
+- For Branches to build enter `*/master`
 10. Build Triggers -> Select `Github hook trigger for GitScm#`
 11. Office 365 Connector -> Select `Restrict where this project can be run` -> Label Expression: Enter `sparta-ubuntu-node`
 12. Build Environment -> Select Provide Node & npm bin/folder to PATH
