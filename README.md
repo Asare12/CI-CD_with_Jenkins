@@ -18,8 +18,8 @@ To put it simply, the continuous integration is part of both continuous delivery
 ## What is a CI CD Pipeline
 The CI/CD pipeline is all about automation: Initiating code builds, automated testing, and automated deploying to the staging or production environments. It’s complex and exciting at the same time, but incredibly fast, if the output of any stage fails, the next stage will also fail.
 
-## Set up Jenkins
-# Create a Jenkins key
+# Set up Jenkins
+## Create a Jenkins key
 1. `cd ~/.ssh` : Go into your .ssh folder
 2. `ssh-keygen -t rsa -b 4096 -C "your_github_email.com"` replace the github email with your actual email
 3. `jaspreetjenkins` - file name for the ssh key
@@ -29,7 +29,7 @@ The CI/CD pipeline is all about automation: Initiating code builds, automated te
 - Public key ending in .pub will be used in GitHub and Private key in Jenkins to clone your repo.
 - If the correct key is not passed into GitHub or Jenkins the ssh connection from GitHub to Jenkins will fail. We have ssh key to establish a connection between Jenkins and GitHub.
 
-# Build a job in Jenkins
+## Build a job in Jenkins
 1. Login to Jenkins
 2. Click create new jobs/ new item
 3. Select `freestyle projects` and give it a name `jaspreet_testing_jenkins`, then click `OK`
@@ -40,7 +40,7 @@ Max builds- select as 3.
 7. Dashboard: Click on the job you created `jaspreet_testing_jenkins` and select `Build now` from side tab or drop down next to name.
 8. Build history should display it being built under the number of the job.
 
-# Configure the job in Jenkins
+## Configure the job in Jenkins
 1. `Configure` : select this from the side tab.
 2. `GitHub Project`: Go to GitHUB -> your repo -> under code select `HTTP` and copy your githublink `https://github.com/jaspreet/...` Paste link in Jenkins GitHub Project heading (make sure it is selected)
 - Doing this we are instructing Jenkins to go and get the code from GitHub repo.
