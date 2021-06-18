@@ -37,7 +37,7 @@ The CI/CD pipeline is all about automation: Initiating code builds, automated te
 Max builds- select as 3.
 5. `Build section`: under `Add Build step` select `Execute shell`
 6. `Commands`: Input the following `date`.
-7. Dashboard: Click on the job you created `jaspreet_testing_jenkins` and select `Build now` from side tab or drop down next to name.
+7. Dashboard: Click on the job you created `david_testing_jenkins` and select `Build now` from side tab or drop down next to name.
 8. Build history should display it being built under the number of the job.
 
 ## Configure the job in Jenkins
