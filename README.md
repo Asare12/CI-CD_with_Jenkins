@@ -25,7 +25,7 @@ The CI/CD pipeline is all about automation: Initiating code builds, automated te
 3. `davidjenkins` - file name for the ssh key
 4. `passphrase` - you don't need to enter anything, hit enter x2
 5. your keys should load
-6. `ls` : you should see `newjaspreetjenkins.pub` = public key and `newjaspreetjenkins` = private key
+6. `ls` : you should see `davidjenkins.pub` = public key and `davidjenkins` = private key
 - Public key ending in .pub will be used in GitHub and Private key in Jenkins to clone your repo.
 - If the correct key is not passed into GitHub or Jenkins the ssh connection from GitHub to Jenkins will fail. We have ssh key to establish a connection between Jenkins and GitHub.
 
