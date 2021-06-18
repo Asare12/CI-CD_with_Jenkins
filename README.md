@@ -22,7 +22,7 @@ The CI/CD pipeline is all about automation: Initiating code builds, automated te
 ## Create a Jenkins key
 1. `cd ~/.ssh` : Go into your .ssh folder
 2. `ssh-keygen -t rsa -b 4096 -C "your_github_email.com"` replace the github email with your actual email
-3. `jaspreetjenkins` - file name for the ssh key
+3. `davidjenkins` - file name for the ssh key
 4. `passphrase` - you don't need to enter anything, hit enter x2
 5. your keys should load
 6. `ls` : you should see `newjaspreetjenkins.pub` = public key and `newjaspreetjenkins` = private key
@@ -32,7 +32,7 @@ The CI/CD pipeline is all about automation: Initiating code builds, automated te
 ## Build a job in Jenkins
 1. Login to Jenkins
 2. Click create new jobs/ new item
-3. Select `freestyle projects` and give it a name `jaspreet_testing_jenkins`, then click `OK`
+3. Select `freestyle projects` and give it a name `david_testing_jenkins`, then click `OK`
 4. Give it a description and select `discard old builds` in the `General section`
 Max builds- select as 3.
 5. `Build section`: under `Add Build step` select `Execute shell`
@@ -42,9 +42,9 @@ Max builds- select as 3.
 
 ## Configure the job in Jenkins
 1. `Configure` : select this from the side tab.
-2. `GitHub Project`: Go to GitHUB -> your repo -> under code select `HTTP` and copy your githublink `https://github.com/jaspreet/...` Paste link in Jenkins GitHub Project heading (make sure it is selected)
+2. `GitHub Project`: Go to GitHUB -> your repo -> under code select `HTTP` and copy your githublink `https://github.com/Asare12/...` Paste link in Jenkins GitHub Project heading (make sure it is selected)
 - Doing this we are instructing Jenkins to go and get the code from GitHub repo.
-3. Go back to GitHub -> your repo -> under code select `SSH` and copy the ssh link `git@github.com:jaspreet...`
+3. Go back to GitHub -> your repo -> under code select `SSH` and copy the ssh link `git@github.com:Asare12...`
 4. In Jenkins Configure -> Source Code Management -> Repository URL -> paste the SSH link. (HTTP link if it doesnt work).
 5. For Credentials click `Add`-> Select `Jenkins` -> 
 - Kind : select `SSH Username and private key`
